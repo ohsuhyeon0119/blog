@@ -6,10 +6,10 @@
 }
 
 .Cover {
-  background-color: black;
+  background-color: rgb(140, 186, 229);
   width: 100%;
   height: 35vh;
-  border: 1px solid black;
+
   display: grid;
 
   grid-template-rows: 2fr 1fr 1fr;
@@ -46,18 +46,25 @@
 
 .Main {
   display: grid;
-
-  margin: 0rem 3rem 1rem 3rem;
+  background-color: rgb(247, 235, 235);
+  margin: 0rem 0rem 1rem 0rem;
 }
 .main-item {
-  border-bottom: 1px solid gray;
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.main-menu {
+  height: 10vh;
+}
+.Notice {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
   text-align: center;
-  margin-top: 1rem;
+  margin: 1rem 0rem 0rem 0rem;
 }
 
-.Notice {
-  height: 70vh;
-  text-align: center;
-  margin: 1rem 3rem 1rem 3rem;
-  border-bottom: 1px solid gray;
+.img-link {
+  max-width: 1.5rem;
 }

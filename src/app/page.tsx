@@ -34,7 +34,7 @@ function Cover() {
     <div className="Cover">
       <div className="cover-item">1</div>
       <div className="cover-item">
-        <h1 className="title">suhyeon의 블로그</h1>
+        <h1 className="title">SUHYEON의 블로그</h1>
       </div>
       <div className="cover-item">
         <p style={{ marginLeft: '1rem' }}>웹 페이지 공사중입니다...</p>
@@ -46,33 +46,36 @@ function Cover() {
 function Main() {
   return (
     <div className="Main">
+      <div className="main-menu">메인메뉴</div>
       <div className="main-item">
-        <h3>첫번째 글</h3>
-        <p>동해물과 백두산이 마르고 닳도록..</p>
-      </div>
-      <div className="main-item">
-        <h3>두번째 글</h3>
-        <p>동해물과 백두산이 마르고 닳도록..</p>
-      </div>
-      <div className="main-item">
+        <p>2023-10-10</p>
         <h3>세번째 글</h3>
-        <p>동해물과 백두산이 마르고 닳도록..</p>
+        <p>
+          동해 물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 남산
+          위에 저 소나무 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 가을
+          하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세 이
+          기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세
+        </p>
       </div>
       <div className="main-item">
-        <h3>네번째 글</h3>
-        <p>동해물과 백두산이 마르고 닳도록..</p>
+        <p>2023-10-10</p>
+        <h3>두번째 글</h3>
+        <p>
+          동해 물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 남산
+          위에 저 소나무 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 가을
+          하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세 이
+          기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세
+        </p>
       </div>
       <div className="main-item">
-        <h3>다섯번째 글</h3>
-        <p>동해물과 백두산이 마르고 닳도록..</p>
-      </div>
-      <div className="main-item">
-        <h3>여섯번째 글</h3>
-        <p>동해물과 백두산이 마르고 닳도록..</p>
-      </div>
-      <div className="main-item">
-        <h3>일곱번째 글</h3>
-        <p>동해물과 백두산이 마르고 닳도록..</p>
+        <p>2023-10-10</p>
+        <h3>첫번째 글</h3>
+        <p>
+          동해 물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 남산
+          위에 저 소나무 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 가을
+          하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세 이
+          기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세
+        </p>
       </div>
     </div>
   );
@@ -81,14 +84,27 @@ function Main() {
 function Notice() {
   return (
     <div className="Notice">
-      <h1>notice</h1>
-      <p>웹페이지 공사중 입니다</p>
-      <hr />
+      <p>
+        Instgram <img src="/Instagram_logo.png" className="img-link" alt="" />
+      </p>
+
+      <p>
+        Github <img src="/GitHub-Mark.png" className="img-link"></img>{' '}
+      </p>
+      <p>
+        Email <img src="/gmail.png" className="img-link"></img>
+      </p>
     </div>
   );
 }
 function Footer() {}
 
+function Search() {
+  return <div></div>;
+}
+function Apps() {
+  return <div className="Apps"></div>;
+}
 export default function Home() {
   // const [mobileView] = useMediaQuery('(max-width: 768px)', {
   //   ssr: true,
@@ -101,8 +117,10 @@ export default function Home() {
 
       <Cover></Cover>
       <Notice></Notice>
-      <Main></Main>
 
+      <Apps></Apps>
+      <Main></Main>
+      <Search></Search>
       <></>
     </div>
   );
