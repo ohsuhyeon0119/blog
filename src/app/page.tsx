@@ -8,11 +8,13 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { BiSearchAlt } from 'react-icons/bi';
 import { AiOutlineMenu } from 'react-icons/ai';
+import { CgProfile } from 'react-icons/cg';
+import { BsLayoutTextWindowReverse } from 'react-icons/bs';
 function Header() {
   return (
     <div className="Header">
       <div className="item">
-        <button className="header-button">BLOG</button>
+        <button className="header-button">EVERYTHING IS A DOT</button>
       </div>
       <div className="item"></div>
       <div className="item">
@@ -97,7 +99,32 @@ function Notice() {
     </div>
   );
 }
-function Footer() {}
+function Footer() {
+  return (
+    <div className="Footer">
+      <div className="item">
+        <button className="header-button">
+          <CgProfile size="1.6em"></CgProfile>
+        </button>
+      </div>
+      <div className="item">
+        <button className="header-button">
+          <BiSearchAlt size="1.6em"></BiSearchAlt>
+        </button>
+      </div>
+      <div className="item">
+        <button className="header-button">
+          <BsLayoutTextWindowReverse size="1.6em"></BsLayoutTextWindowReverse>
+        </button>
+      </div>
+      <div className="item">
+        <button className="header-button">
+          <AiOutlineMenu size="1.6em"></AiOutlineMenu>
+        </button>
+      </div>
+    </div>
+  );
+}
 
 function Search() {
   return <div></div>;
@@ -121,7 +148,7 @@ export default function Home() {
       <Apps></Apps>
       <Main></Main>
       <Search></Search>
-      <></>
+      <Footer></Footer>
     </div>
   );
 }

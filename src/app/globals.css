@@ -16,12 +16,13 @@
 }
 .Header {
   position: fixed;
+  top: 0px;
   height: 7vh;
   width: 100vw;
   border: none;
   color: white;
   display: grid;
-  grid-template-columns: 1fr 3.5fr 1fr 1fr;
+  grid-template-columns: 5fr 1fr 1fr 1fr;
   background-color: white;
 }
 .item {
@@ -67,4 +68,15 @@
 
 .img-link {
   max-width: 1.5rem;
+}
+.Footer {
+  position: fixed;
+  bottom: 0px;
+  height: 7vh;
+  width: 100vw;
+  border: none;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: white;
 }
